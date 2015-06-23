@@ -252,7 +252,8 @@ board = new Board();
 board.draw();
 
 //changeable algorithm
-var algo = max;
+var algo = maxAlphaBeta;
+
 
 function max(depth, player){
 	if(depth==0 || board.checkFourConnectedOrCompleted()){
@@ -265,14 +266,13 @@ function max(depth, player){
 		if(res != null){
 			var value = min(depth-1, player*-1);
 			undo(i, res);
-			debugger;
 			if(value[0] > best){
 				best = value[0];
 				next_turn = i;
 			}
 		}
 	}
-	if(next_turn==undefined) debugger;
+
 	return [best, next_turn];
 }
 
@@ -294,7 +294,56 @@ function min(depth, player){
 			}
 		}
 	}
-	if(next_turn==undefined) debugger;
+	//if max() returns only INFINITIES, if block is never reached and best remains INFINITY and next_turn undefined.
+	//cant return INFINITY cause max will have the same problem.
+	if(next_turn==undefined) return [-INFINITY];
+	return [best, next_turn];
+}
+
+function maxAlphaBeta(depth, player, alpha, beta){
+	if(depth==0 || board.checkFourConnectedOrCompleted()){
+		return [evaluate(board.field, player)-evaluate(board.field, player*-1)]
+	}
+	var best = -INFINITY;
+	var next_turn;
+	for(var i = 0; i < board.COLS; i++){
+		var res = board.drop(i, player);
+		if(res != null){
+			if(best > alpha) alpha = best;
+			var value = minAlphaBeta(depth-1, player*-1, alpha, beta);
+			undo(i, res);
+			if(value[0] > best){
+				best = value[0];
+				next_turn = i;
+			}
+			if(best >= beta) return [best, next_turn];
+		}
+	}
+
+	return [best, next_turn];
+}
+
+function minAlphaBeta(depth, player, alpha, beta){
+	if(depth==0 || board.checkFourConnectedOrCompleted()){
+		return [evaluate(board.field, player*-1)-evaluate(board.field, player)];
+	}
+	var best = INFINITY;
+	var next_turn;
+	for(var i = 0; i < board.COLS; i++){
+		var res = board.drop(i, player);
+		if(res != null){
+			if(best < beta) beta = best;
+			var value = maxAlphaBeta(depth-1, player*-1, alpha, beta);
+			undo(i, res);
+
+			if(value[0] < best){
+				best = value[0];
+				next_turn = i;
+			}
+			if(alpha >= best) return [best, next_turn];
+		}
+	}
+	if(next_turn==undefined) return [-INFINITY];
 	return [best, next_turn];
 }
 
@@ -358,9 +407,9 @@ function negamax2(depth, player){
 };	
 
 function ai(){
-	DEPTH = 4;
-	
-	var res = algo(DEPTH, COMPUTER_TURN);
+	DEPTH = 6;
+
+	var res = algo(DEPTH, COMPUTER_TURN, -INFINITY,INFINITY);
 	dropResult = drop(res[1], COMPUTER_TURN);
 	console.log('drop result:'+dropResult);
 	console.log('droped in '+res[1]+' with '+res[0]);
