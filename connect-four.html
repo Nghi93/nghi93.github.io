@@ -257,7 +257,7 @@ var algo = maxAlphaBeta;
 
 function max(depth, player){
 	if(depth==0 || board.checkFourConnectedOrCompleted()){
-		return [evaluate(board.field, player)-evaluate(board.field, player*-1)]
+		return [evaluate(board.field, player)-evaluate(board.field, player*-1)];
 	}
 	var best = -INFINITY;
 	var next_turn;
@@ -294,9 +294,7 @@ function min(depth, player){
 			}
 		}
 	}
-	//if max() returns only INFINITIES, if block is never reached and best remains INFINITY and next_turn undefined.
-	//cant return INFINITY cause max will have the same problem.
-	if(next_turn==undefined) return [-INFINITY];
+
 	return [best, next_turn];
 }
 
@@ -343,7 +341,7 @@ function minAlphaBeta(depth, player, alpha, beta){
 			if(alpha >= best) return [best, next_turn];
 		}
 	}
-	if(next_turn==undefined) return [-INFINITY];
+
 	return [best, next_turn];
 }
 
@@ -407,7 +405,7 @@ function negamax2(depth, player){
 };	
 
 function ai(){
-	DEPTH = 6;
+	DEPTH = 8;
 
 	var res = algo(DEPTH, COMPUTER_TURN, -INFINITY,INFINITY);
 	dropResult = drop(res[1], COMPUTER_TURN);
@@ -542,6 +540,7 @@ function ai(){
 			}
 			
 		}
+		if(rating) rating /= 10;
 		return rating;
 	}
 </script>
