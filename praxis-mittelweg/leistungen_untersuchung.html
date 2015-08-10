@@ -1,0 +1,280 @@
+<link href="css/foundation.css" rel="stylesheet" type="text/css">
+<style>
+/* ---- grid ---- */
+
+.grid {
+  max-width: 928px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 232px;
+  height: 168px;
+  float: left;
+  border: 1px solid white;
+}
+
+.grid-item168height {
+  height: 168px !important;
+}
+
+.grid-item180height {
+  height: 180px !important;
+}
+
+.grid-item186height {
+  height: 186px !important;
+}
+
+.grid-item--width { width: 464px; }
+.grid-item--height { height: 360px; }
+.grid-item366height { height: 366px; }
+
+/* ---- grid-item end ---- */
+
+#einseins {
+	background: url('bilder/wiedling_logo.jpg');
+}
+
+#einszwei {
+	background: #F0D0BB;
+}
+
+#einsdrei {
+	background: url('bilder/leistung_mikroskop.jpg');
+}
+
+#einsvier {
+	background: url('bilder/praxis_rechts_over.jpg');
+}
+
+#zweieins{
+	background: url('bilder/stein_links_ganz.jpg');
+}
+
+.indent {
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+.indent2 {
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+
+.indent p, .indent2 p { 
+	margin:0;
+	font-size: 12px;
+}
+
+.indent .blank{
+	margin: 5px;
+}
+
+a.top{
+	margin-top:10px;
+}
+
+a.bottom{
+	margin-top:135px;
+}
+
+a.right{
+	margin-right: 15px;
+	clear: right; !important; /* overriding foundations right */
+}
+
+a.left {
+	margin-left: 15px;
+	clear: left !important; /* overriding foundations left */
+}
+
+.menu2{
+	height:auto;
+	min-height:336px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:336px;                   /* for IE as it does not support min-height */
+}
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+
+#sprechzeiten td:nth-child(1){
+	padding-left: 35px;
+}
+
+#sprechzeiten{
+	border-spacing:1em;
+}
+
+.text{
+	min-height:356px; 
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:356px;   
+	background-color: #FFFFFF;
+	padding: 40 20 25 20;
+}
+
+.grid-item696width{
+  	width:696px; 
+}
+</style>
+<link href="bilder/style.css" rel="stylesheet" type="text/css">
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar show-for-medium">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+<div class="grid violet">
+  <div class="grid-sizer"></div>
+  <div class="grid-item grid-item180height" id="einseins">
+	<div class="indent">
+		<p><strong>Dr. med.</strong></p>
+		<p><strong>Kirsten Wiedling</strong></p>
+		<p class="blank"></p>
+		<p>Fach&auml;rztin f&uuml;r</p>
+		<p>Gyn&auml;kologie</p>
+		<p>und Geburtshilfe</p>
+		<p class="blank"></p>
+		<p>Naturheilverfahren</p>
+	</div>
+  </div>
+  <div class="grid-item grid-item180height" id="einszwei"><a class="bottom left violetfett" href="#">Leistungen</a></div>
+  <div class="grid-item grid-item--width grid-item180height" id="einsdrei">
+
+  </div>  
+  <div class="grid-item menu2 hide-for-medium-down" id="zweieins">
+	<ul class="menu side-nav transparenz">
+	  <li class="menurahmenOben"><a href="#">Home</a></li>
+	  <li class="menurahmen"><a id="diepraxis" href="#">Die Praxis</a>
+	  	<ul class="test">
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+		</ul>
+	  </li>
+	  <li class="menurahmen"><a href="leistungen_untersuchung.php">Leistungen</a></li>
+	  <li class="menurahmen"><a href="unser_team.php">Unser Team</a></li>
+	  <li class="menurahmen"><a href="patienten_info_news.php">Patienten Info</a></li>
+	  <li class="menurahmen"><a href="kontakt.php">Kontakt</a></li>
+	  <li class="menurahmen"><a href="impressum.php">Impressum</a></li>
+	</ul>
+  </div>  
+  <div class="grid-item text grid-item696width">
+	<p class="violetfett">Gynäkologische Untersuchungen</p>
+    <p><span style="font-weight: bold"><a href="#1" class="violet">Gynäkologische Untersuchung</a></span><br>
+                    <br>
+                    <span style="font-weight: bold"><a href="#2" class="violet">Krebsfrüherkennungsuntersuchung</a></span><br>
+                    <br>
+                    <span class="violet" style="font-weight: bold"><a href="#3" class="violet">Entzündungen</a></span><br>
+                    <br>
+                    <span style="font-weight: bold"><a name="1"></a><br>
+                    Gynäkologische Untersuchung<br>
+                      </span><br>
+                      Eine gynäkologische Untersuchung ist nötig, um beurteilen zu können, ob die Gebärmutter, die Eierstöcke, die Scheide und die Brüste gesund sind. </p>
+                  <p>                    Ich kann überprüfen, ob z. B. mit einer Verhütung oder einer Hormontherapie begonnen werden kann oder ob Sie eine bereits angefangene Therapie gut vertragen. </p>
+                  <p>                    Nach einer Behandlung muss ich ihren Erfolg durch eine Untersuchung überprüfen. Bevor und während ich Sie untersuche, erkläre ich genau, was ich tue. Ich bin stets sehr behutsam.                  </p>
+                  <p><span style="font-weight: bold"><span style="font-weight: bold"><a name="2" id="2"></a></span><br>
+                    Krebsfrüherkennungsuntersuchung</span><br>
+                    <br>
+                    Eine gynäkologische Krebsfrüherkennungsuntersuchung wird ab dem 20. Lebensjahr und dann ein Leben lang empfohlen und das einmal im Jahr. Bei der Untersuchung werden mit einem Wattetupfer oder einem kleinem Bürstchen Zellen vom Gebärmutterhals entnommen und untersucht. Es werden die Gebärmutter und die Eierstöcke abgetastet.  Ab dem 30. Lebensjahr wird die Brust abgetastet und ab 50 wird eine Mammographie alle 2 Jahre von den Krankenkassen übernommen. </p>
+                  <p>                    Ab dem 50. Lebensjahr wird der Enddarm untersucht, und es wird ein Test auf Blut im Stuhl durchgeführt. Ab 55 wird eine Darmspiegelung empfohlen. Leider gehen Frauen mit zunehmendem Alter weniger häufig zur Vorsorgeuntersuchung. Doch gerade mit zunehmendem Alter wächst die Häufigkeit der Krebsdiagnosen. Das Alter ist einer der wichtigsten Risikofaktoren.</p>
+                  <p>                    Persönliche Gründe, nicht zur Vorsorge zu gehen, gibt es jede Menge: Angst vor der Untersuchung und Angst vor der Diagnose. Doch Angst ist ein schlechter Ratgeber! Denn eine früh erkannte Krebserkrankung lässt sich sehr viel besser behandeln als eine Krebserkrankung, die sich schon weit ausbreiten konnte. Natürlich schützt Vorsorge nicht davor, Krebs zu bekommen, aber die Heilungschancen sind deutlich höher. </p>
+                  <p>                    Schicken Sie auch Ihre Töchter zur Vorsorge! Überzeugen Sie Ihre Mutter und Ihre Freundinnen, dass Krebsfrüherkennungsuntersuchungen sinnvoll sind!                  </p>
+                  <p style="font-weight: bold"><span style="font-weight: bold"><a name="3" id="3"></a></span><br>
+                    Entzündungen</p>
+                  <p>Wenn Sie Symptome einer Entzündung haben, wie z. B. Juckreiz, Brennen, Schmerzen im
+                    Genitalbereich und/ oder Ausfluss, werde ich die entsprechende Diagnostik durchführen und 
+                    Ihnen Medikamente empfehlen (z. B. Zäpfchen, Tabletten, Salbe).
+                    Bei immer wiederkehrenden Infekten ist auch eine Impfung möglich.</p>
+  </div>
+</div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.offcanvas.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+<script>
+var $grid;
+$(document).ready( function() {
+  $(document).foundation();
+  $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 232
+  });
+
+});
+$( "#diepraxis" ).click(function() {
+  $( ".test" ).toggle( "fast", function() {
+    // Animation complete.
+  });
+});
+jQuery(function($){
+		 $( '.menu-btn' ).click(function(){
+			$('.responsive-menu').toggleClass('expand');
+		 })
+	});
+if (window.matchMedia) {
+    var mq = window.matchMedia ("(max-width:768px)");
+    window.addEventListener ('resize',changed,true);
+}	
+
+function changed(){
+	$grid.masonry('layout');
+}
+</script>

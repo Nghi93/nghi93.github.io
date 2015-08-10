@@ -1,0 +1,366 @@
+<link href="css/foundation.css" rel="stylesheet" type="text/css">
+<style>
+/* ---- grid ---- */
+
+.grid {
+  max-width: 928px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 232px;
+  height: 168px;
+  float: left;
+  border: 1px solid white;
+}
+
+.grid-item168height {
+  height: 168px !important;
+}
+
+.grid-item180height {
+  height: 180px !important;
+}
+
+.grid-item186height {
+  height: 186px !important;
+}
+
+.grid-item--width { width: 464px; }
+.grid-item--height { height: 360px; }
+.grid-item366height { height: 366px; }
+
+/* ---- grid-item end ---- */
+
+#einseins {
+	background: url('bilder/wiedling_logo.jpg');
+}
+
+#einszwei{
+	background: #F3E7DC;
+}
+
+#einsdrei {
+	background: #BE9F8E;
+}
+
+#einsvier{
+	background: #F3E7DC;
+}
+
+#zweieins{
+	background: url('bilder/stein_links_ganz.jpg');
+}
+
+#zweizwei{
+	background: url('bilder/stein_mitte_mitte.jpg');
+}
+
+#dreizwei{
+	background: url('bilder/stein_unten_mitte.jpg');
+}
+
+#viereins{
+	background: #7F555A;
+}
+
+#vierzwei{
+	background: #C2A493;
+}
+
+.indent {
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+.indent2 {
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+
+.indent p, .indent2 p { 
+	margin:0;
+	font-size: 12px;
+}
+
+.indent .blank{
+	margin: 5px;
+}
+
+a.top{
+	margin-top:10px;
+}
+
+a.bottom{
+	margin-top:135px;
+}
+
+a.right{
+	margin-right: 15px;
+	clear: right; !important; /* overriding foundations right */
+}
+
+a.left {
+	margin-left: 15px;
+	clear: left !important; /* overriding foundations left */
+}
+
+.menu2{
+	height:auto;
+	min-height:336px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:336px;                   /* for IE as it does not support min-height */
+}
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+
+#sprechzeiten td:nth-child(1){
+	padding-left: 35px;
+}
+
+#sprechzeiten{
+	border-spacing:1em;
+}
+
+.text{
+	min-height:356px; 
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:356px;   
+	background-color: #FFFFFF;
+	padding: 40 20 25 20;
+}
+
+.violetbg{
+	background: #774B51 !important;
+}
+.min-height354{
+	min-height: 354px;
+}
+</style>
+<link href="bilder/style.css" rel="stylesheet" type="text/css">
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar show-for-medium">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+<div class="grid violet">
+  <div class="grid-sizer"></div>
+  <div class="grid-item grid-item180height" id="einseins">
+	<div class="indent">
+		<p><strong>Dr. med.</strong></p>
+		<p><strong>Kirsten Wiedling</strong></p>
+		<p class="blank"></p>
+		<p>Fach&auml;rztin f&uuml;r</p>
+		<p>Gyn&auml;kologie</p>
+		<p>und Geburtshilfe</p>
+		<p class="blank"></p>
+		<p>Naturheilverfahren</p>
+	</div>
+  </div>
+  <div class="grid-item grid-item180height" id="einszwei">
+    <div class="indent2 hide-for-small">
+		<p>Mittelweg 123</p>
+		<p>20148 Hamburg</p>
+		<p class="blank"></p>
+		<p>Tel 040 - 44 40 45</p>
+		<p>Fax 040 - 44 99 90</p>
+		<p class="blank"></p>
+		<p><a href="mailto:e-mail@praxis-mittelweg.de" class="violet">E-mail(ät)praxis-mittelweg.de</a></p>
+	</div>
+	<div class="show-for-small">
+		 <div class="menu-btn" id="menu-btn">
+		<div></div>
+		<span></span>
+		<span></span>
+		<span></span>
+		 </div>
+
+		 <div class="responsive-menu">
+			<ul>
+			   <li>1. Object</li>
+			   <li>2. Object</li>
+			</ul>
+		 </div>
+	</div>
+  </div>
+  <div class="grid-item grid-item180height" id="einsdrei"></div>  
+  <div class="grid-item grid-item180height" id="einsvier">
+  </div>  
+
+  <div class="grid-item menu2 min-height354 hide-for-medium-down" id="zweieins">
+	<ul class="menu side-nav transparenz">
+	  <li class="menurahmenOben"><a href="#">Home</a></li>
+	  <li class="menurahmen"><a id="diepraxis" href="#">Die Praxis</a>
+	  	<ul class="test">
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+		</ul>
+	  </li>
+	  <li class="menurahmen"><a href="leistungen_untersuchung.php">Leistungen</a></li>
+	  <li class="menurahmen"><a href="unser_team.php">Unser Team</a></li>
+	  <li class="menurahmen"><a href="patienten_info_news.php">Patienten Info</a></li>
+	  <li class="menurahmen"><a href="kontakt.php">Kontakt</a></li>
+	  <li class="menurahmen"><a href="impressum.php">Impressum</a></li>
+	</ul>
+  </div>  
+  <div class="grid-item grid-item186height" id="zweizwei">
+  </div>   
+  <div class="grid-item grid-item186height text grid-item--width" id="zweidrei">
+	  <p><strong>Impressum</strong></p>
+	  <p><strong>Dr. med. Kirsten Wiedling<br>
+	  </strong>                Gynäkologische Praxis<br>
+		Mittelweg 123<br>
+		20148 Hamburg<br>
+		Tel: 040 / 44 40 45<br>
+		Fax: 040 / 44 99 90<br>
+		<a href="mailto:e-mail@praxis-mittelweg.de" class="violet">E-mail(ät)praxis-mittelweg.de</a><br>
+		<a href="http://www.praxis-mittelweg.de" target="_blank" class="violet">www.praxis-mittelweg.de</a><br>
+		<br>
+		<br>
+		<br>
+		<span style="font-weight: bold">Berufsbezeichnung:</span><br>
+Dr. med. Kirsten Wiedling<br>
+Fachärztin für Frauenheilkunde und Geburtshilfe<br>
+(Verliehen in der Bundesrepublik Deutschland) </p>
+	  <p><span style="font-weight: bold"><br>
+		Zuständige Aufsichtsbehörde:</span><br>
+Kassenärztliche Vereinigung Hamburg<br>
+		Humboldtstr. 56<br>
+		22083 Hamburg<br>
+		Tel: 040 / 22 802 -0<br>
+		Fax: 040 / 22 802-420<br>
+		e-Mail: <a href="mailto:kvhamburg@kvhh.de" class="violet">kvhamburg@kvhh.de</a><br>
+		<a href="http://www.kvhh.de" target="_blank" class="violet">www.kvhh.de</a><br>
+		<br>
+		<br>
+		<br>              
+		<span style="font-weight: bold"><br>
+		Zuständige Kammer:</span><br>
+	  Ärztekammer:Hamburg<br>
+		Humboldtstr. 56<br>
+		22083 Hamburg<br>
+		Tel: 040 / 22 802-596<br>
+		Fax: 040 / 220 99 80<br>
+		<a href="mailto:aekhh@aerztekammer-hamburg.de" class="violet">aekhh@aerztekammer-hamburg.de</a><br>
+		<a href="http://www.aerztekammer-hamburg.de" target="_blank" class="violet">www.aerztekammer-hamburg.de
+		</a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<span style="font-weight: bold">Berufsrechtliche Regelungen:</span><br>
+		<a href="http://www.aerztekammer-hamburg.de/berufsrecht/Berufsordnung.pdf" target="_blank" class="violet">Berufsordnung der Landesärztekammer Hamburg</a><br>
+		<br>
+		<br>
+		<br>
+		<span style="font-weight: bold">Inhaltlich Verantwortliche gemäß §6 MDStV: </span><br>
+		Dr. med. Kirsten Wiedling<br>
+		<br>
+		<br>
+	  </p>
+	  <p>Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+	 
+  </div>  
+  <div class="grid-item grid-item168height" id="dreizwei">
+  </div>  
+	<div class="grid-item" id="viereins"></div>
+	<div class="grid-item" id="vierzwei">
+		<div class="indent2">
+		 <p><a href="http://www.profil3.de" target="_blank" class="beigefett">Design</a></p>
+         <p><a href="http://www.antoana-gerhold.de" target="_blank" class="submenuvio">Antoana Gerhold</a></p>
+		 <p>&nbsp;</p>
+         <p><a href="http://www.n7media.de" target="_blank" class="beigefett">Webdesign</a></p>
+         <p><a href="http://www.n7media.de" target="_blank" class="submenuvio">n7media - Agentur für Kommunikationsdesign </a></p>
+	</div>
+</div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.offcanvas.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+<script>
+var $grid;
+$(document).ready( function() {
+  $(document).foundation();
+  $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 232
+  });
+
+});
+$( "#diepraxis" ).click(function() {
+  $( ".test" ).toggle( "fast", function() {
+    // Animation complete.
+  });
+});
+jQuery(function($){
+		 $( '.menu-btn' ).click(function(){
+			$('.responsive-menu').toggleClass('expand');
+		 })
+	});
+if (window.matchMedia) {
+    var mq = window.matchMedia ("(max-width:768px)");
+    window.addEventListener ('resize',changed,true);
+}	
+
+function changed(){
+	$grid.masonry('layout');
+}
+</script>

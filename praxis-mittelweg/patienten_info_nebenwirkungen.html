@@ -1,0 +1,267 @@
+<link href="css/foundation.css" rel="stylesheet" type="text/css">
+<style>
+/* ---- grid ---- */
+
+.grid {
+  max-width: 928px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 232px;
+  height: 168px;
+  float: left;
+  border: 1px solid white;
+}
+
+.grid-item168height {
+  height: 168px !important;
+}
+
+.grid-item180height {
+  height: 180px !important;
+}
+
+.grid-item186height {
+  height: 186px !important;
+}
+
+.grid-item--width { width: 464px; }
+.grid-item--height { height: 360px; }
+.grid-item366height { height: 366px; }
+
+/* ---- grid-item end ---- */
+
+#einseins {
+	background: url('bilder/wiedling_logo.jpg');
+}
+
+#einszwei{
+	background: #E7CFBA;
+}
+
+#einsdrei {
+	background: url('bilder/patienten_info.jpg');
+}
+
+#zweieins{
+	background: url('bilder/stein_links_ganz.jpg');
+}
+
+.indent {
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+.indent2 {
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+
+.indent p, .indent2 p { 
+	margin:0;
+	font-size: 12px;
+}
+
+.indent .blank{
+	margin: 5px;
+}
+
+a.top{
+	margin-top:10px;
+}
+
+a.bottom{
+	margin-top:135px;
+}
+
+a.right{
+	margin-right: 15px;
+	clear: right; !important; /* overriding foundations right */
+}
+
+a.left {
+	margin-left: 15px;
+	clear: left !important; /* overriding foundations left */
+}
+
+.menu2{
+	height:auto;
+	min-height:336px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:336px;                   /* for IE as it does not support min-height */
+}
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+
+#sprechzeiten td:nth-child(1){
+	padding-left: 35px;
+}
+
+#sprechzeiten{
+	border-spacing:1em;
+}
+
+.text{
+  	width:696px; 
+	min-height:356px; 
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:356px;   
+	background-color: #FFFFFF;
+	padding: 40 20 25 20;
+}
+
+.grid-item696width{
+	 width:696px !important;
+}
+
+.violetbg{
+	background: #774B51 !important;
+}
+</style>
+<link href="bilder/style.css" rel="stylesheet" type="text/css">
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar show-for-medium">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+<div class="grid violet">
+  <div class="grid-sizer"></div>
+  <div class="grid-item grid-item180height" id="einseins">
+	<div class="indent">
+		<p><strong>Dr. med.</strong></p>
+		<p><strong>Kirsten Wiedling</strong></p>
+		<p class="blank"></p>
+		<p>Fach&auml;rztin f&uuml;r</p>
+		<p>Gyn&auml;kologie</p>
+		<p>und Geburtshilfe</p>
+		<p class="blank"></p>
+		<p>Naturheilverfahren</p>
+	</div>
+  </div>
+  <div class="grid-item grid-item180height" id="einszwei">
+	<a class="bottom left violetfett" href="#">Patienten Info</a>
+  </div>
+  <div class="grid-item grid-item180height grid-item--width" id="einsdrei"></div>  
+
+  <div class="grid-item menu2 hide-for-medium-down" id="zweieins">
+	<ul class="menu side-nav transparenz">
+	  <li class="menurahmenOben"><a href="#">Home</a></li>
+	  <li class="menurahmen"><a id="diepraxis" href="#">Die Praxis</a>
+	  	<ul class="test">
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+			<li>Sprechzeiten</li>
+			<li>Rundgang</li>
+		</ul>
+	  </li>
+	  <li class="menurahmen"><a href="leistungen_untersuchung.php">Leistungen</a></li>
+	  <li class="menurahmen"><a href="unser_team.php">Unser Team</a></li>
+	  <li class="menurahmen"><a href="patienten_info_news.php">Patienten Info</a></li>
+	  <li class="menurahmen"><a href="kontakt.php">Kontakt</a></li>
+	  <li class="menurahmen"><a href="impressum.php">Impressum</a></li>
+	</ul>
+  </div>     
+  <div class="grid-item grid-item696width text violetbg lauftext">
+	<p class="beigefett"><strong>Arzneimittelnebenwirkungen</strong></p>
+	  <p>Was würden Sie sagen, wenn Sie folgenden Beipackzettel lesen?</p>
+	  <p>Folgende Nebenwirkungen können auftreten: Bauchschmerzen, Übelkeit, Unwohlsein, Durchfall, Verstopfung, Kopfschmerzen. Appetitlosigkeit, suchtartiges Verhalten.<br>
+		Selten können auftreten: Asthmatische Beschwerden, Juckreiz, Hautausschläge, Blasenbildung, allergische Reaktionen bis hin zum anaphylaktischen Schock.<br>
+		Bei langandauernder Anwendung kamen auch Fälle von Übergewicht, erhöhten Cholesterinwerten, Bluthochdruck, Zuckerkrankheit und Mangel an Nährstoffen vor.<br>
+		Sehr seltene Nebenwirkungen waren: Herzinfarkt, Schlaganfall, Nierenversagen, Bewusstlosigkeit, Erblindung, Nervenausfälle. …</p>
+	  <p>Mit so einem Produkt würden Sie auf den ersten Blick sicher nichts mehr zu tun haben wollen, oder? Aber stellen Sie sich vor, es geht nur um Schokolade oder eine andere Süßigkeit! Wenn für Lebensmittel die gleichen Richtlinien gelten würden wie für Medikamente, dann könnte sich ein Beipackzettel so anhören.</p>
+	  <p>Bei Medikamenten ist es gesetzlich vorgeschrieben, dass auch Nebenwirkungen, die seltener als 1: 1000 sind oder nur in Einzelfällen auftreten, genannt werden müssen. Die Auflistung der Nebenwirkungen dient der rechtlichen Absicherung der Hersteller.</p>
+	  <p>Wenn Sie überlegen, wie „gefährlich“ einige Beipackzettel von Lebensmitteln wären, die wir jeden Tag selbstverständlich zu uns nehmen und was für „tödliche Nebenwirkungen“ z. B. Rauchen, Alkohol und auch der Straßenverkehr haben können, ist es nicht zu verstehen, dass Medikamente, die helfen sollen und oft lebensnotwendig sind, aus Angst vor Nebenwirkungen nicht eingenommen werden.</p>
+	  <p>Für Fragen nach Nebenwirkungen stehe ich Ihnen gerne zur Verfügung.<br>
+	  </p>
+  </div>
+</div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.offcanvas.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+<script>
+var $grid;
+$(document).ready( function() {
+  $(document).foundation();
+  $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 232
+  });
+
+});
+$( "#diepraxis" ).click(function() {
+  $( ".test" ).toggle( "fast", function() {
+    // Animation complete.
+  });
+});
+jQuery(function($){
+		 $( '.menu-btn' ).click(function(){
+			$('.responsive-menu').toggleClass('expand');
+		 })
+	});
+if (window.matchMedia) {
+    var mq = window.matchMedia ("(max-width:768px)");
+    window.addEventListener ('resize',changed,true);
+}	
+
+function changed(){
+	$grid.masonry('layout');
+}
+</script>
