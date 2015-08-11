@@ -5,7 +5,7 @@ $(document).ready( function() {
 	itemSelector: '.grid-item',
 	columnWidth: 232
   });
-
+	
 });
 $( ".hasSubMenu" ).click(function() {
   $(this).siblings().toggle( "fast", function() {
@@ -21,6 +21,16 @@ if (window.matchMedia) {
 	window.addEventListener ('resize',changed,true);
 }	
 
-function changed(){
+function changed(e){
 	$grid.masonry('layout');
+	console.log(viewport());
+}
+
+function viewport() {
+    var e = window, a = 'inner';
+    if (!('innerWidth' in window )) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
 }

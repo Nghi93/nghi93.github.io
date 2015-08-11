@@ -194,6 +194,7 @@ A.submenuvio:hover {
   max-width: 928px;
   margin: 0px auto;
   margin-top: 30px;
+  zoom: 1;
 }
 
 /* clearfix */
@@ -433,6 +434,7 @@ height:auto !important;        /* for IE as it does not support min-height */
 height:356px;   
 background-color: #FFFFFF;
 padding: 40 20 25 20;
+word-wrap: break-all;
 }
 
 .steinMitte{
@@ -445,4 +447,16 @@ padding: 40 20 25 20;
 
 .violetbg{
 	background: #774B51 !important;
+}
+
+@media (max-width: 1000px) {
+.text{
+	width: 928px !important;
+}
+}
+
+@media (max-width: 800px) {
+.text{
+	width: 464px !important;
+}
 }
