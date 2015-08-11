@@ -49,6 +49,7 @@ A.menu:hover {
 	color: #FDF7F8;
 	text-decoration: none;
 }
+
 A.menuvio,
 A.menuvio:link,
 A.menuvio:visited {
@@ -65,6 +66,7 @@ A.menuvio:hover {
 	color: #FDF7F8;
 	text-decoration: underline;
 }
+
 .submenuvioaktiv {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -73,6 +75,9 @@ A.menuvio:hover {
 	text-decoration: none;
 	line-height:1em;
 }
+.specialmenu li a,
+.specialmenu li a:link,
+.specialmenu li a:visited,
 A.submenuvio,
 A.submenuvio:link,
 A.submenuvio:visited {
@@ -83,6 +88,7 @@ A.submenuvio:visited {
 	text-decoration: none;
 	line-height:1em;
 }
+.specialmenu li a:hover,
 A.submenuvio:hover {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -98,6 +104,7 @@ A.submenuvio:hover {
 .rahmen {
         border:1px solid #FFFFFF;
 }
+
 .menurahmen {
 	border-bottom: 1px solid #FFFFFF;
 	border-top-style: solid;
@@ -106,6 +113,11 @@ A.submenuvio:hover {
 	border-top-width: 1px;
 	border-top-color: #FFFFFF;
 }
+
+#navcontainer ul li a:hover{
+	background: #ffffff;
+}
+
 .menurahmenvio {
 	border-bottom: 1px solid #FFFFFF;
 	border-top-style: solid;
@@ -175,3 +187,194 @@ A.submenuvio:hover {
 	color: #F3E7DC;
 	line-height:1.1em;
 }
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 928px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 232px;
+  height: 168px;
+  float: left;
+  border: 1px solid white;
+}
+
+.grid-item168height {
+  height: 168px !important;
+}
+
+.grid-item180height {
+  height: 180px !important;
+}
+
+.grid-item186height {
+  height: 186px !important;
+}
+
+.grid-item366height { height: 366px; }
+
+.grid-item--width { width: 464px; }
+.grid-item--height { height: 360px; }
+
+/* ---- grid-item end ---- */
+
+.logo {
+	background: url('wiedling_logo.jpg');
+}
+
+.address {
+	background: #F3E7DC;
+}
+
+.braunEmpfang {
+	background: url('empfang_braun.jpg') #BFA190;
+}
+
+.beigebg {
+	background: #F3E7DC;
+}
+
+.emfpangunscharf{
+	background: url('empfang_unscharf.jpg');
+}
+
+.empfang{
+	background: url('empfang.jpg');
+}
+
+.steinunten{
+	background: url('stein_unten_mitte.jpg');
+}
+
+.specialmenu li a:hover,.rotbg{
+	background: #7F555A !important;
+}
+
+.braunbg{
+	background: #C2A493;
+}
+
+.indent {
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+.indent2 {
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+
+.indent p, .indent2 p { 
+	margin:0;
+	font-size: 12px;
+}
+
+.indent .blank{
+	margin: 5px;
+}
+
+a.top{
+	margin-top:10px;
+}
+
+a.bottom{
+	margin-top:135px;
+}
+
+a.right{
+	margin-right: 15px;
+	clear: right; !important; /* overriding foundations right */
+}
+
+a.left {
+	margin-left: 15px;
+	clear: left !important; /* overriding foundations left */
+}
+
+.menu2{
+	height:auto;
+	min-height:336px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:336px;                   /* for IE as it does not support min-height */
+	background: url('stein_links_ganz.jpg');
+}
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+
+#navcontainer{
+	height:auto;
+	min-height:335px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:335px;                   /* for IE as it does not support min-height */
+}
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.active{
+    background: url('menu_vio_bg.jpg');
+}
+
+#navcontainer ul li a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+#navcontainer ul li ul {
+	display: none;
+}
+
+#navcontainer ul li.active ul {
+	display: block;
+}
+
+.specialmenu
