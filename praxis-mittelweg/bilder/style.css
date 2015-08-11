@@ -259,7 +259,10 @@ A.submenuvio:hover {
 	background: url('stein_unten_mitte.jpg');
 }
 
-.specialmenu li a:hover,.rotbg{
+#navcontainer ul li.active ul li.active,
+#navcontainer ul li.active ul li.active a:hover,
+.specialmenu li a:hover,
+.rotbg{
 	background: #7F555A !important;
 }
 
@@ -356,8 +359,13 @@ padding: 0;
 list-style-type: none;
 }
 
-.active{
+#navcontainer ul li.active, #navcontainer ul li.active a:hover{
     background: url('menu_vio_bg.jpg');
+}
+
+#navcontainer ul li.active a,
+#navcontainer ul li.active a:link{
+    color: #ffffff;
 }
 
 #navcontainer ul li a{
@@ -377,4 +385,10 @@ list-style-type: none;
 	display: block;
 }
 
-.specialmenu
+#navcontainer ul li.active ul li a:hover{
+	text-decoration: underline;
+}
+
+#navcontainer ul li.active ul li.active a:hover{
+	text-decoration: none;
+}
