@@ -205,32 +205,4 @@
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.offcanvas.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
-<script>
-    var $grid;
-    $(document).ready( function() {
-      $(document).foundation();
-      $grid = $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 232
-      });
-    
-    });
-    $( "#diepraxis" ).click(function() {
-      $( ".test" ).toggle( "fast", function() {
-        // Animation complete.
-      });
-    });
-    jQuery(function($){
-    		 $( '.menu-btn' ).click(function(){
-    			$('.responsive-menu').toggleClass('expand');
-    		 })
-    	});
-    if (window.matchMedia) {
-        var mq = window.matchMedia ("(max-width:768px)");
-        window.addEventListener ('resize',changed,true);
-    }	
-    
-    function changed(){
-    	$grid.masonry('layout');
-    }
-</script>
+<script src="js/app.js"></script>
