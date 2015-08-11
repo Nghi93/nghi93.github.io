@@ -228,22 +228,24 @@ A.submenuvio:hover {
 
 .grid-item--width { width: 464px; }
 .grid-item--height { height: 360px; }
-
+.grid-item696width{
+	width: 696px;
+}
 /* ---- grid-item end ---- */
 
 .logo {
 	background: url('wiedling_logo.jpg');
 }
 
-.address {
-	background: #F3E7DC;
-}
-
 .braunEmpfang {
 	background: url('empfang_braun.jpg') #BFA190;
 }
 
-.beigebg {
+.braunbg{
+	background: #BE9F8E;
+}
+
+.address, .beigebg {
 	background: #F3E7DC;
 }
 
@@ -264,6 +266,10 @@ A.submenuvio:hover {
 .specialmenu li a:hover,
 .rotbg{
 	background: #7F555A !important;
+}
+
+.hautfarbenbg {
+	background: #F0D0BB;
 }
 
 .braunbg{
@@ -391,4 +397,52 @@ list-style-type: none;
 
 #navcontainer ul li.active ul li.active a:hover{
 	text-decoration: none;
+}
+
+.praxisOben {
+	background: url('praxis_oben_over.jpg');
+}
+.praxisRechts {
+	background: url('praxis_rechts_over.jpg');
+}
+
+.praxisMitte{
+	background: url('praxis_mitte_over.jpg');
+}
+
+.praxisUntenLinks {
+	background: url('praxis_unten_links_over.jpg');
+}
+
+.praxisUntenRechts{
+	background: url('praxis_unten_rechts_over.jpg');
+}
+
+#sprechzeiten td:nth-child(1){
+	padding-left: 35px;
+}
+
+.mikroskop {
+background: url('leistung_mikroskop.jpg');
+}
+
+
+.text{
+min-height:356px; 
+height:auto !important;        /* for IE as it does not support min-height */
+height:356px;   
+background-color: #FFFFFF;
+padding: 40 20 25 20;
+}
+
+.steinMitte{
+	background: url('stein_mitte_mitte.jpg');
+}
+
+.steinUntenMitte{
+	background: url('stein_unten_mitte.jpg');
+}
+
+.violetbg{
+	background: #774B51 !important;
 }

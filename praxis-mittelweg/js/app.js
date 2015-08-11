@@ -15,11 +15,7 @@ $( ".hasSubMenu" ).click(function() {
   $(this).parent().toggleClass('active');
   
 });
-jQuery(function($){
-		 $( '.menu-btn' ).click(function(){
-			$('.responsive-menu').toggleClass('expand');
-		 })
-	});
+
 if (window.matchMedia) {
 	var mq = window.matchMedia ("(max-width:768px)");
 	window.addEventListener ('resize',changed,true);

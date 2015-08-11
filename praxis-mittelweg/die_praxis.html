@@ -1,98 +1,4 @@
 <link href="css/foundation.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<style>
-    .praxisOben {
-    background: url('bilder/praxis_oben_over.jpg');
-    }
-    .praxisRechts {
-    background: url('bilder/praxis_rechts_over.jpg');
-    }
-    #zweieins{
-    background: url('bilder/stein_links_ganz.jpg');
-    }
-    #zweizwei{
-    background: url('bilder/praxis_mitte_over.jpg');
-    }
-    #zweidrei{
-    background: url('bilder/empfang.jpg');
-    }
-    #dreieins{
-    background: url('bilder/praxis_unten_links_over.jpg');
-    }
-    #dreizwei{
-    background: #7F555A;
-    }
-    #dreidrei{
-    background: url('bilder/praxis_unten_rechts_over.jpg');
-    }
-    .indent {
-    margin-left: 70px;
-    margin-top: 40px;
-    }
-    .indent2 {
-    margin-left: 20px;
-    margin-top: 60px;
-    }
-    .indent p, .indent2 p { 
-    margin:0;
-    font-size: 12px;
-    }
-    .indent .blank{
-    margin: 5px;
-    }
-    a.top{
-    margin-top:10px;
-    }
-    a.bottom{
-    margin-top:135px;
-    }
-    a.right{
-    margin-right: 15px;
-    clear: right; !important; /* overriding foundations right */
-    }
-    a.left {
-    margin-left: 15px;
-    clear: left !important; /* overriding foundations left */
-    }
-    .menu2{
-    height:auto;
-    min-height:336px;
-    height:auto !important;        /* for IE as it does not support min-height */
-    height:336px;                   /* for IE as it does not support min-height */
-    }
-    .menu-btn div {
-    position: absolute;
-    left: 100%;
-    top: 64%;
-    padding-right: 8px;
-    margin-top: -0.50em;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: 200;
-    vertical-align: middle;
-    z-index: 99;
-    }
-    .menu-btn span {
-    display: block;
-    width: 19px;
-    height: 3px;
-    margin: 4px 0;
-    background: rgb(0,0,0);
-    z-index: 99;
-    }
-    .responsive-menu{
-    display: none;
-    }
-    .expand {
-    display: block !important; 
-    }
-    #sprechzeiten td:nth-child(1){
-    padding-left: 35px;
-    }
-    #sprechzeiten{
-    border-spacing:1em;
-    }
-</style>
 <link href="bilder/style.css" rel="stylesheet" type="text/css">
 <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
@@ -138,7 +44,7 @@
                 </div>
                 <div class="grid-item grid-item366height praxisRechts">
                 </div>
-                <div class="grid-item menu2 hide-for-medium-down" id="zweieins">
+                <div class="grid-item menu2 hide-for-medium-down">
                     <ul class="menu side-nav transparenz">
                         <li class="menurahmenOben"><a href="#">Home</a></li>
                         <li class="menurahmen">
@@ -157,9 +63,9 @@
                         <li class="menurahmen"><a href="impressum.php">Impressum</a></li>
                     </ul>
                 </div>
-                <div class="grid-item grid-item--width grid-item186height" id="zweizwei"></div>
-                <div class="grid-item" id="dreieins"></div>
-                <div class="grid-item" id="dreizwei">
+                <div class="grid-item grid-item--width grid-item186height praxisMitte"></div>
+                <div class="grid-item praxisUntenLinks"></div>
+                <div class="grid-item rotbg">
                     <table width="232" height="168" border="0" cellpadding="0" id="sprechzeiten" class="lauftext lauftextklein">
                         <tr>
                             <th colspan="2" class="lauftext"><strong>Unsere Sprechzeiten für Sie:</strong></th>
@@ -195,7 +101,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="grid-item" id="dreidrei"></div>
+                <div class="grid-item praxisUntenRechts"></div>
             </div>
         </section>
         <a class="exit-off-canvas"></a>
