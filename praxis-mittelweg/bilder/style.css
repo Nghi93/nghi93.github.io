@@ -449,14 +449,21 @@ word-wrap: break-all;
 	background: #774B51 !important;
 }
 
-@media (max-width: 1000px) {
-.text{
-	width: 928px !important;
-}
+@media (max-width: 1000px) and (min-width: 801px){
+	.text{
+		width: 928px !important;
+	}
 }
 
 @media (max-width: 800px) {
 .text{
 	width: 464px !important;
+}
+}
+
+@media (max-width: 400px) {
+.text{
+	width: 200px !important;
+	word-wrap: break-word;
 }
 }
