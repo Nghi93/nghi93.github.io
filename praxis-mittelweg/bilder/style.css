@@ -67,7 +67,7 @@ A.menuvio:hover {
 	text-decoration: underline;
 }
 
-.submenuvioaktiv {
+#navcontainer ul.specialmenu li a.submenuvioaktiv {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	font-weight: bold;
@@ -194,7 +194,6 @@ A.submenuvio:hover {
   max-width: 928px;
   margin: 0px auto;
   margin-top: 30px;
-  zoom: 1;
 }
 
 /* clearfix */
@@ -210,7 +209,7 @@ A.submenuvio:hover {
   width: 232px;
   height: 168px;
   float: left;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .grid-item168height {
@@ -218,17 +217,18 @@ A.submenuvio:hover {
 }
 
 .grid-item180height {
-  height: 180px !important;
+  height: 168px !important;
 }
 
 .grid-item186height {
-  height: 186px !important;
+  height: 168px !important;
 }
 
-.grid-item366height { height: 366px; }
+.grid-item366height { height: 336; }
 
 .grid-item--width { width: 464px; }
-.grid-item--height { height: 360px; }
+
+.grid-item--height { height: 336; }
 .grid-item696width{
 	width: 696px;
 }
@@ -240,6 +240,10 @@ A.submenuvio:hover {
 
 .braunEmpfang {
 	background: url('empfang_braun.jpg') #BFA190;
+}
+
+.purpurbg{
+	background: #854950;
 }
 
 .braunbg{
@@ -322,42 +326,7 @@ a.left {
 	height:336px;                   /* for IE as it does not support min-height */
 	background: url('stein_links_ganz.jpg');
 }
-.menu-btn div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
 
-.menu-btn span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background: rgb(0,0,0);
-	z-index: 99;
-}
-
-.responsive-menu{
-	display: none;
-}
-
-.expand {
-	display: block !important; 
-}
-
-#navcontainer{
-	height:auto;
-	min-height:335px;
-	height:auto !important;        /* for IE as it does not support min-height */
-	height:335px;                   /* for IE as it does not support min-height */
-}
 
 #navcontainer ul
 {
@@ -370,8 +339,8 @@ list-style-type: none;
     background: url('menu_vio_bg.jpg');
 }
 
-#navcontainer ul li.active a,
-#navcontainer ul li.active a:link{
+#navcontainer ul li.active > a, 
+#navcontainer ul li.active > a:link{
     color: #ffffff;
 }
 
@@ -427,6 +396,9 @@ list-style-type: none;
 background: url('leistung_mikroskop.jpg');
 }
 
+#mapslink{
+	margin-top: 110px !important;
+}
 
 .text{
 min-height:356px; 
@@ -449,13 +421,7 @@ word-wrap: break-all;
 	background: #774B51 !important;
 }
 
-@media (max-width: 1000px) and (min-width: 801px){
-	.text{
-		width: 928px !important;
-	}
-}
-
-@media (max-width: 800px) {
+@media (max-width: 995px) {
 .text{
 	width: 464px !important;
 }
@@ -463,7 +429,12 @@ word-wrap: break-all;
 
 @media (max-width: 400px) {
 .text{
-	width: 200px !important;
+	width: 232px !important;
 	word-wrap: break-word;
+}
+
+.formulartextfeld,
+.formular{
+	width: 120px;
 }
 }
